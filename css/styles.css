@@ -12,6 +12,15 @@ a {
   color:white;
   text-decoration:none
 }
+
+.backgroundBlack {
+  background-color: black;
+}
+
+.backgroundWineRed {
+  background-color: #6c0918;
+}
+
 body {
   margin: 0 auto;
   max-width: 1200px;
@@ -36,20 +45,28 @@ button {
   display:flex;
 }
 
-.flexRow {
-  flex-direction:row;
+.flexBetween {
+  justify-content:space-between;
 }
 
-.flexRowReverse {
-  flex-direction: row-reverse;
+.flexCenter {
+  justify-content: center;
 }
 
 .flexColumn {
   flex-direction:column;
 }
 
-.flexBetween {
-  justify-content:space-between;
+.flexEvenly {
+  justify-content: space-evenly;
+}
+
+.flexRow {
+  flex-direction:row;
+}
+
+.flexRowReverse {
+  flex-direction: row-reverse;
 }
 
 h2 {
@@ -67,8 +84,6 @@ li {
 span {
   display:block;
 }
-
-
 /* Common styles END*/
 /*Header styles START*/
 header {
@@ -155,13 +170,13 @@ h4 {
 }
 
 .highLightContent h2 {
-  text-align: left;
   padding:0;
+  text-align: left;
 }
 
+.highLightContent button,
 .highLightContent h2,
-.highLightContent p,
-.highLightContent button{
+.highLightContent p {
   margin: 0 0 0 2vw;
 }
 /*About section styles END*/
@@ -171,11 +186,33 @@ h4 {
 }
 
 .blogContent {
-  width:50%;
   padding: 5vh 8%;
+  width:50%;
 }
 
-.blogBanner {
-  background-image:url();
+.flexRow.flexEvenly {
+  background-image:url(https://psd.hackeryou.com/assignment1-assets/drive-solo/oscar-aguilar-327500-unsplash@2x.png);
+  background-position: center;
+  background-size:cover;
+}
+
+.flexColumn.flexCenter {
+  padding:8vh 0;
+  width: 33%;
+}
+
+.flexColumn.flexCenter i {
+  color:#cc1d36;
+  font-size:250%;
+  text-align: center;
+}
+
+.flexColumn.flexCenter h2 {
+  color:white;
+  text-align: center;
+  margin-top:2vh;
 }
 /*Blog section styles END*/
+/*Contact section styles START*/
+
+/*Contact section styles END*/
