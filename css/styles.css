@@ -1,0 +1,181 @@
+/* Setup START*/
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+/* Setup END*/
+/* Common styles START*/
+a {
+  color:white;
+  text-decoration:none
+}
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  /*16px*125%=20px*/
+  font-size:125%;
+  width:80%;
+}
+
+button {
+  background-color: #ba0621;
+  border: none;
+  border-radius: 2px;
+  color:white;
+  font-family: 'Kanit', sans-serif;
+  /*font size 20px for web design 20/20px=1rem*/
+  font-size:1rem;
+  font-style: italic;
+  font-weight: bold;
+  width: 8vw;
+}
+.flexbox {
+  display:flex;
+}
+
+.flexRow {
+  flex-direction:row;
+}
+
+.flexRowReverse {
+  flex-direction: row-reverse;
+}
+
+.flexColumn {
+  flex-direction:column;
+}
+
+.flexBetween {
+  justify-content:space-between;
+}
+
+h2 {
+  font-family: 'Kanit', sans-serif;
+  /*font size 42px for web design 42/20px=2.1rem*/
+  font-size:2.1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+span {
+  display:block;
+}
+
+
+/* Common styles END*/
+/*Header styles START*/
+header {
+  background-image: url(https://psd.hackeryou.com/assignment1-assets/drive-solo/image-1@2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+  height: 70vh;
+}
+
+.siteTittle {
+    margin: 0 0 5vh 7vw;
+}
+
+h1 {
+  color:#cc1d36;
+  font-family: 'Kanit', sans-serif;
+  /*font size 116.2px for web design 116.2px/20px=5.81rem*/
+  font-size:5.81rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 10vh;
+  letter-spacing:1px;
+  margin-bottom:0;
+}
+
+h3 {
+  font-family: 'Kanit', sans-serif;
+  /*font size 20px for web design 20px/20px=1rem*/
+  font-size:1rem;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+   /*font size 31px for web design 31px/20px=1.55rem*/
+  font-size:1.55rem;
+  margin-top:0;
+}
+
+.localNavi {
+  margin-right: 7vw;
+}
+
+.localNavi li{
+  font-family: 'Catamaran', sans-serif;
+  font-size:0.9rem;
+  margin-right: 2vw; 
+}
+
+.socialMedia {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.socialMedia li {
+  margin: 1vh 3vw;
+}
+/*Header styles END*/
+/*About section styles START*/
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.wrapper h2 {
+  margin: 10vh auto;
+  text-align:center;
+}
+
+.vehiclePicDisplay img {
+  width:31%;
+}
+
+.vehiclePicDisplay :nth-child(2) {
+  margin:0 3%;
+}
+
+.highLightContent {
+  margin: 10vh 0;
+}
+.highLightContent img {
+  height:25vh;
+}
+
+.highLightContent h2 {
+  text-align: left;
+  padding:0;
+}
+
+.highLightContent h2,
+.highLightContent p,
+.highLightContent button{
+  margin: 0 0 0 2vw;
+}
+/*About section styles END*/
+/*Blog section styles START*/
+#blog img {
+  width: 50%;
+}
+
+.blogContent {
+  width:50%;
+  padding: 5vh 8%;
+}
+
+.blogBanner {
+  background-image:url();
+}
+/*Blog section styles END*/
