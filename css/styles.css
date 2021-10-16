@@ -29,7 +29,8 @@ body {
   width:80%;
 }
 
-button {
+button,
+input[type="submit"] {
   background-color: #ba0621;
   border: none;
   border-radius: 2px;
@@ -39,6 +40,7 @@ button {
   font-size:1rem;
   font-style: italic;
   font-weight: bold;
+  height: 5vh;
   width: 8vw;
 }
 .flexbox {
@@ -84,6 +86,12 @@ li {
 span {
   display:block;
 }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  /*font size 20px for web design 20px/20px=1rem*/
+  font-size: 1rem;
+}
 /* Common styles END*/
 /*Header styles START*/
 header {
@@ -114,7 +122,7 @@ h1 {
 h3 {
   font-family: 'Kanit', sans-serif;
   /*font size 20px for web design 20px/20px=1rem*/
-  font-size:1rem;
+  font-size: 1rem;
 }
 
 h4 {
@@ -214,5 +222,62 @@ h4 {
 }
 /*Blog section styles END*/
 /*Contact section styles START*/
+.contactSub, 
+.contactInfo,
+#contact nav {
+  color:white;
+  margin: 5vh auto;
+}
 
+.contactSub {
+  width: 50%;
+}
+
+input[type="email"],
+input[type="submit"] {
+  border-style: hidden;
+  height: 5vh;
+}
+
+input[type="email"] {
+  float:left;
+  width:70%;
+}
+
+input[type="submit"] {
+  background-color:black;
+}
+
+.contactInfo,
+#contact nav {
+  margin-left: 0;
+}
+
+.contactInfo p {
+  line-height: 1vh;
+}
+
+#contact nav {
+  font-family: 'Kanit', sans-serif;
+  /*font size 20px for web design 20/20px=1rem*/
+  font-size:1rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 3vh;
+  text-align: end;
+}
 /*Contact section styles END*/
+/*Footer styles START*/
+footer {
+  color:white;
+  text-align: center;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  /*font size 18px for web design 18px/20px=0.9rem*/
+  font-size: 0.9rem;
+  margin: 0 auto;
+  padding: 3vh 0;
+}
+/*Footer styles END*/
