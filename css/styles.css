@@ -198,6 +198,11 @@ h4 {
   width:50%;
 }
 
+#blog :last-child {
+  /* Remove the gap between second and third children blocks */
+  margin-top: -0.1vh;
+}
+
 .flexRow.flexEvenly {
   background-image:url(https://psd.hackeryou.com/assignment1-assets/drive-solo/oscar-aguilar-327500-unsplash@2x.png);
   background-position: center;
@@ -277,6 +282,7 @@ footer p {
   font-family: 'Roboto', sans-serif;
   /*font size 18px for web design 18px/20px=0.9rem*/
   font-size: 0.9rem;
+  /* Remove the gap between contact section and footer */
   margin: 0 auto;
   padding: 3vh 0;
 }
