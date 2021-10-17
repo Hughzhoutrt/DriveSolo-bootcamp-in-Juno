@@ -294,6 +294,10 @@ footer p {
 /*Footer styles END*/
 
 @media (max-width: 1195px) {
+  h1 {
+    line-height: 6vh;
+  }
+
   body {
     width: 90%;
   }
@@ -315,12 +319,21 @@ footer p {
   .blogContent {
     padding: 5vh 6%;
   }
+
+  button,
+  input[type="submit"] {
+    width: 15vw;
+  }
+
+  input[type="submit"] {
+    background-color: black;
+  }
 }
 
 @media (max-width: 955px) {
   button,
   input[type="submit"] {
-    width: 12vw;
+    width: 18vw;
   }
 
   input[type="submit"] {
@@ -329,6 +342,10 @@ footer p {
 
   .blogContent {
     padding: 5vh 4%;
+  }
+
+  input[type="email"] {
+    width:60%;
   }
 }
 
@@ -354,15 +371,11 @@ footer p {
 
   button,
   input[type="submit"] {
-    width: 16vw;
+    width: 20vw;
   }
 
   input[type="submit"] {
     background-color: black;
-  }
-
-  input[type="email"] {
-    width:60%;
   }
 
   h1 {
@@ -472,17 +485,99 @@ footer p {
   .dropdownBox {
     align-self: flex-end;
     display: block;
-    height:4vh;
-    width:6vw;
-    border-top: 2px solid white;
-		border-bottom: 2px solid white;
-    background-clip:content-box;
-    background-color: white;
-    padding: 11px 0;
-    margin:3vh 3vw;
+    margin:3vh 5vw;
+  }
+
+  .dropdownBox i {
+    font-size: 200%;
   }
 
   .dropdown:hover .localNavi {
     display: flex;
+  }
+
+  .localNavi li {
+    width: 15vw;
+  }
+
+  .localNavi li:hover {
+    background-color: #cc1d36;
+    padding-left: 1vw;
+  }
+
+  button {
+  height: 6vh;
+  width: 22vw;
+  }
+}
+
+@media (max-width: 554px) {
+  .localNavi {
+    left: -12vw;
+  }
+  button {
+    width: 24vw;
+  }
+}
+
+@media (max-width: 503px) {
+  .localNavi {
+    left: -14vw;
+  }
+
+  button {
+    width: 26vw;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .contactSub, 
+  .contactInfo,
+  #contact nav {
+    margin: 5vh 0;
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+  width: 80%;
+  margin: 0 auto;
+  }
+
+ h1 {
+   font-size: 3.5rem;
+ }
+
+ h2 {
+   font-size: 1.5rem;
+ }
+
+ p {
+   font-size: 0.8rem;
+ }
+}
+
+@media (max-width: 445px) {
+  .localNavi {
+    left: -18vw;
+  }
+
+  .localNavi li {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 386px) {
+  .localNavi {
+    left: -22vw;
+  }
+
+  .localNavi li {
+    width: 25vw;
+  }
+
+  button {
+    width: 30vw;
   }
 }
