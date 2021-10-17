@@ -365,8 +365,9 @@ footer p {
 
   .blogContent {
     flex-direction: column;
+    margin: 0 auto;
     text-align: center;
-    width:100%;
+    width: 80%;
   }
 
   button,
@@ -447,7 +448,7 @@ footer p {
     margin: 5vh 0 0;
   }
 
-  h3 {
+  header h3 {
     visibility: hidden;
   }
 
@@ -486,6 +487,14 @@ footer p {
     align-self: flex-end;
     display: block;
     margin:3vh 5vw;
+    /* Making three lines for menu icon */
+    width: 50px;
+    height: 25px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: white;
+    padding: 8px 0;
+    background-clip:content-box;
   }
 
   .dropdownBox i {
@@ -508,6 +517,10 @@ footer p {
   button {
   height: 6vh;
   width: 22vw;
+  }
+
+  #blog span {
+    display:block;
   }
 }
 
@@ -566,6 +579,10 @@ footer p {
   .localNavi li {
     width: 20vw;
   }
+
+  button {
+    width: 32vw;
+  }
 }
 
 @media (max-width: 386px) {
@@ -578,6 +595,20 @@ footer p {
   }
 
   button {
-    width: 30vw;
+    width: 34vw;
+  }
+}
+
+@media (max-width: 334px) {
+  .localNavi {
+    left: -24vw;
+  }
+
+  .localNavi li {
+    width: 25vw;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 }
