@@ -132,6 +132,10 @@ h4 {
   margin-top:0;
 }
 
+.dropdownBox {
+  display: none;
+}
+
 .localNavi {
   margin-right: 7vw;
 }
@@ -171,10 +175,11 @@ h4 {
 }
 
 .highLightContent {
+  height:30vh;
   margin: 10vh 0;
 }
 .highLightContent img {
-  height:25vh;
+  height: 100%;
 }
 
 .highLightContent h2 {
@@ -202,7 +207,7 @@ h4 {
   /* Remove the gap between second and third children blocks */
   margin-top: -0.1vh;
 }
-
+/* The last section (banner) in blog */
 .flexRow.flexEvenly {
   background-image:url(https://psd.hackeryou.com/assignment1-assets/drive-solo/oscar-aguilar-327500-unsplash@2x.png);
   background-position: center;
@@ -231,7 +236,7 @@ h4 {
 .contactInfo,
 #contact nav {
   color:white;
-  margin: 5vh auto;
+  margin: 5vh 2vw;
 }
 
 .contactSub {
@@ -287,3 +292,197 @@ footer p {
   padding: 3vh 0;
 }
 /*Footer styles END*/
+
+@media (max-width: 1195px) {
+  body {
+    width: 90%;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 10vw;
+  }
+
+  input[type="submit"] {
+    background-color: black;
+  }
+}
+
+@media (max-width: 1124px) {
+  body {
+    width: 100%;
+  }
+  .blogContent {
+    padding: 5vh 6%;
+  }
+}
+
+@media (max-width: 955px) {
+  button,
+  input[type="submit"] {
+    width: 12vw;
+  }
+
+  input[type="submit"] {
+    background-color: black;
+  }
+
+  .blogContent {
+    padding: 5vh 4%;
+  }
+}
+
+@media (max-width: 800px) {
+  #blog .flexBetween {
+    display: flex;
+    flex-direction:column ;
+  }
+
+  #blog img {
+    width: 100%;
+  }
+
+  #blog span {
+    display:inline;
+  }
+
+  .blogContent {
+    flex-direction: column;
+    text-align: center;
+    width:100%;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 16vw;
+  }
+
+  input[type="submit"] {
+    background-color: black;
+  }
+
+  input[type="email"] {
+    width:60%;
+  }
+
+  h1 {
+    font-size:5.3rem;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  #contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contactSub {
+    text-align: center;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactInfoNav {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 705px){
+  h1 {
+    font-size:4rem;
+  }
+
+  h4 {
+    font-size:1rem;
+  }
+
+  .flexRow.flexEvenly {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flexColumn.flexCenter {
+    padding:8vh 0 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  /* The section of THIS WEEKS HIGHLIGHT */
+  .wrapper :last-child {
+    flex-direction: column;
+  }
+
+  .highLightContent {
+    height:100%;
+    margin: 10vh 0;
+  }
+
+  .highLightContent img {
+    width: 100%;
+  }
+
+  .highLightContent button,
+  .highLightContent h2,
+  .highLightContent p {
+    margin: 5vh 0 0;
+  }
+
+  h3 {
+    visibility: hidden;
+  }
+
+  .vehiclePicDisplay :last-child {
+    display: none;
+  }
+
+  .vehiclePicDisplay img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 597px) {
+  .dropdown{
+    flex-direction: column;
+    justify-content: flex-start;
+    height:10vh;
+    width:10%;
+    position:relative;
+  }
+  .localNavi,
+  .socialMedia {
+    display:none;
+    position:absolute;
+    top: 5vh;
+    left: -10vw;
+  }
+
+  .localNavi ul,
+  .socialMedia ul {
+    flex-direction: column;
+    line-height: 2;
+  }
+
+  .dropdownBox {
+    align-self: flex-end;
+    display: block;
+    height:4vh;
+    width:6vw;
+    border-top: 2px solid white;
+		border-bottom: 2px solid white;
+    background-clip:content-box;
+    background-color: white;
+    padding: 11px 0;
+    margin:3vh 3vw;
+  }
+
+  .dropdown:hover .localNavi {
+    display: flex;
+  }
+}
