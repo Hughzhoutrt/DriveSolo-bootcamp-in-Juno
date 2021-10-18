@@ -252,6 +252,7 @@ input[type="submit"] {
 input[type="email"] {
   float:left;
   width:70%;
+  padding-left: 10%;
 }
 
 input[type="submit"] {
@@ -556,6 +557,11 @@ footer p {
   input[type="submit"] {
   width: 80%;
   margin: 0 auto;
+  }
+
+  input[type="email"] {
+    padding-left: 0;
+    text-align: center;
   }
 
  h1 {
