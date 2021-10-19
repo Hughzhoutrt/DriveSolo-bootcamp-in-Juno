@@ -523,6 +523,12 @@ footer p {
   #blog span {
     display:block;
   }
+
+  /* The last section (banner) in blog */
+.flexRow.flexEvenly {
+  background-position:center;
+  background-size:cover;
+  }
 }
 
 @media (max-width: 554px) {
